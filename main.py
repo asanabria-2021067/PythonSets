@@ -63,12 +63,21 @@ def main():
         
         if choice == '1':
             print("-- Unión --")
+            set1, set2 = select_sets()
+            if set1 and set2:
+                print(f"Unión: {union(set1, set2)}")
         
         elif choice == '2':
             print("-- Intersección --")
+            set1, set2 = select_sets()
+            if set1 and set2:
+                print(f"Intersección: {intersection(set1, set2)}")
         
         elif choice == '3':
             print("-- Diferencia --")
+            set1, set2 = select_sets()
+            if set1 and set2:
+                print(f"Diferencia: {difference(set1, set2)}")
         
         elif choice == '4':
             print("\nConjuntos disponibles: A, B, C, D")
